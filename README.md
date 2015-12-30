@@ -1,8 +1,32 @@
-Demo backend
+Demo Node.js + Sequelize backend
 
 # Usage
-Please refer to [full API documentation]()
-## Environmental Variables
+Please refer to [full API documentation](#docs)
+
+## Installation
+```bash
+git clone https://github.com/wk-cof/node4-sequelize-scaffold.git
+npm install
+```
+
+## Running
+Before running, make sure you specified your required [environment variables](#environment_variables)
+```
+npm run start
+```
+
+## Docs
+
+### Generating docs
+```
+npm run docs
+```
+
+### Accessing docs
+Docs will be created in ./docs directory. Simply navigate to ./docs and open index.html.
+
+## Environment Variables
+*Environment variables can be set in node environment or provided in a env.json file.*
 
 ### verbosity
 Specify verbosity level. Everything with this level's priority and above will be logged.
