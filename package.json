@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/nodejs-scaffold.js",
+    "run": "node bin/nodejs-scaffold.js",
+    "docs": "apidoc -i src/ -o docs/"
+  },
+  "engines": {
+    "node": "4.2.x",
+    "npm": "2.14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+  ],
+  "author": "Mikhail Gorbachev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "express": "^4.13.3",
+    "lodash": "3.10.1",
+    "mysql": "2.9.0",
+    "path": "0.12.7",
+    "request": "2.67.0",
+    "sequelize": "3.14.2",
+    "urijs": "1.17.0",
+    "winston": "2.1.1"
+  },
+  "apidoc": {
+    "description": "API documentation",
+    "title": "API Docs",
+    "url": "",
+    "header": {
+      "title": "Readme",
+      "filename": "README.md"
+    }
+  },
+  "devDependencies": {
+    "apidoc": "0.13.1"
+  }
+}
