@@ -4,12 +4,16 @@ var defaultRoutes = require('./default-routes'),
   demoRoutes = require('../controllers/demo');
 
 module.exports = (app) => {
-  defaultRoutes(app);
-  app.route('/demo')
-    .get(demoRoutes.getDemos)
-    .post(demoRoutes.postDemo)
-    .put(demoRoutes.putDemo)
-    .delete(demoRoutes.deleteDemo);
-  logger.debug('Startup: Added /demo routes');
+	defaultRoutes(app);
+	app.route('/demos')
+		.post(demoRoutes.postDemo)
+		.get(demoRoutes.getDemos)
+	logger.debug('Startup: Added /demos routes');
+
+	app.route('/demos/:id')
+		.get(demoRoutes.getOneDemo)
+		.put(demoRoutes.putDemo)
+		.delete(demoRoutes.deleteDemo);
+	logger.debug('Startup: Added /demos/:id routes');
 
 };

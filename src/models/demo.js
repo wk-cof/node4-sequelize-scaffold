@@ -10,7 +10,10 @@ module.exports = (sequelize, DataTypes) => {
       },
       url: {
         type: DataTypes.STRING(1024),
-        allowNull: false
+        allowNull: false,
+        validate: {
+          isUrl: true
+        }
       },
       number: {
         type: DataTypes.INTEGER,
